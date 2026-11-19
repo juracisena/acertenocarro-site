@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Acerte no Carro: conhecimento e ferramentas para tomar decisões mais conscientes na compra e no cuidado com seu veículo.">
+  <meta name="theme-color" content="#101820">
+  <title>Acerte no Carro | Página oficial</title>
+  <style>
+    :root { --bg:#101820; --panel:#182630; --gold:#e6b84a; --text:#f5f5f2; --muted:#bdc7cc; }
+    * { box-sizing:border-box; }
+    body { margin:0; min-height:100vh; font-family:Arial,Helvetica,sans-serif; color:var(--text);
+      background:radial-gradient(circle at 50% 0%, #263b49 0, var(--bg) 58%); display:flex; flex-direction:column; }
+    main { width:min(760px, calc(100% - 32px)); margin:auto; padding:64px 0 48px; text-align:center; }
+    .brand { display:inline-block; color:var(--gold); font-size:clamp(2rem,7vw,3.5rem); font-weight:900; letter-spacing:.045em; line-height:1; }
+    .rule { width:76px; height:4px; background:var(--gold); margin:22px auto 26px; border-radius:8px; }
+    .intro { max-width:590px; margin:0 auto 36px; color:var(--muted); font-size:1.08rem; line-height:1.65; }
+    .cards { display:grid; grid-template-columns:1fr 1fr; gap:16px; text-align:left; }
+    .card { background:rgba(24,38,48,.92); border:1px solid #344854; border-radius:16px; padding:25px 22px; }
+    .card h2 { margin:0 0 12px; color:var(--gold); font-size:1.2rem; }
+    .card p { min-height:66px; margin:0 0 22px; color:var(--muted); line-height:1.5; }
+    .button { display:block; padding:14px 16px; border-radius:9px; background:var(--gold); color:#17212a; font-weight:800; text-align:center; text-decoration:none; }
+    .button:hover { filter:brightness(1.08); transform:translateY(-1px); }
+    footer { padding:24px 16px 30px; border-top:1px solid #2b3b45; color:var(--muted); text-align:center; font-size:.9rem; }
+    footer a { color:var(--gold); text-decoration:none; margin:0 9px; }
+    @media (max-width:620px) { main { padding-top:48px; } .cards { grid-template-columns:1fr; } .card p { min-height:0; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="brand">ACERTE NO CARRO</div>
+    <div class="rule"></div>
+    <p class="intro">Conhecimento e ferramentas para ajudar você a fazer escolhas mais conscientes na hora de comprar, avaliar ou cuidar do seu veículo.</p>
+
+    <section class="cards" aria-label="Acesse os recursos">
+      <article class="card">
+        <h2>E-book Acerte no Carro</h2>
+        <p>Aprenda a observar os pontos importantes antes de fechar negócio e evite decisões precipitadas na compra de um veículo.</p>
+        <a class="button" href="https://juracisena4.hotmart.host/acerte-no-carro-27764acc-f6e7-43a0-8089-6e534db9b935" target="_blank" rel="noopener noreferrer">CONHECER O E-BOOK</a>
+      </article>
+
+      <article class="card">
+        <h2>Painel Comparativo</h2>
+        <p>Compare informações de até três veículos e organize os principais pontos para apoiar sua decisão.</p>
+        <!-- IMPORTANTE: substitua o endereço abaixo pela URL pública do Painel Comparativo no GitHub. -->
+        <a class="button" href="https://COLE-AQUI-A-URL-DO-PAINEL" target="_blank" rel="noopener noreferrer">ACESSAR O PAINEL</a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div>© <span id="year"></span> Acerte no Carro. Todos os direitos reservados.</div>
+    <div style="margin-top:12px">
+      <a href="termos.html">Termos de Uso</a>
+      <a href="privacidade.html">Política de Privacidade</a>
+    </div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
